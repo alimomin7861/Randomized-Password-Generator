@@ -34,6 +34,15 @@ var generatePassword() {
     addNumber = confirm("Click OK to confirm including numeric characters.");
     addSpecialChar = confirm("Click OK to confirm including special characters.")
 
+    // WHEN I answer each prompt THEN my input should be validated and at least one character type should be selected
+    if (addUpper == false && addLower == false && addNumber == false && addSpecialChar == false) {
+        alert("At least one criteria type is needed to generate randomized password.")
+
+        addUpper = confirm("Click OK to confirm including uppercase characters."); 
+        addLower = confirm("Click OK to confirm including lowercase characters."); 
+        addNumber = confirm("Click OK to confirm including numeric characters.");
+        addSpecialChar = confirm("Click OK to confirm including special characters.")
+    }
 
     // Create Array passwordCriteria with all potential characters based on user-inout
     var passwordCriteria = []
