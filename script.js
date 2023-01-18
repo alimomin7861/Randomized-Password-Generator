@@ -28,6 +28,41 @@ var generatePassword() {
         var addLength = prompt("Enter your desired password length (8 - 128 characters).")
     }
 
+    // Add values to user-inputted variables 
+    addUpper = confirm("Click OK to confirm including uppercase characters."); 
+    addLower = confirm("Click OK to confirm including lowercase characters."); 
+    addNumber = confirm("Click OK to confirm including numeric characters.");
+    addSpecialChar = confirm("Click OK to confirm including special characters.")
+
+
+    // Create Array passwordCriteria with all potential characters based on user-inout
+    var passwordCriteria = []
+
+        // Uppercase characters will be included in the randomized password
+    if (addUpper == true){
+        passwordCriteria = passwordCriteria.concat(addUpper)
+    }
+        // Lowercase characters will be included in the randomized password
+    if (addLower == true){
+        passwordCriteria = passwordCriteria.concat(addLower)
+    }
+        // Numeric characters will be included in the randomized password
+    if (addNumber == true){
+        passwordCriteria = passwordCriteria.concat(addNumber)
+    }
+        // Special characters will be included in the randomized password
+    if (addSpecialChar == true){
+        passwordCriteria = passwordCriteria.concat(addSpecialChar)
+    }
+
+    // Generate random password 
+    var randomPassword = "";
+
+    const randomPassword = Math.floor(Math.random() * randomPassword.length);
+
+
+
+
 
 
 
