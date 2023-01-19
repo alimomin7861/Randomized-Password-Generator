@@ -26,9 +26,6 @@ function generatePassword() {
         alert ("Your desired password length must be between 8 - 128 characters.")
 
         var addLength = prompt("Enter your desired password length (8 - 128 characters).")
-    } else {
-        alert ("Your desired password length must be between 8 - 128 characters.")
-        return generatePassword();
     }
 
     // Password length is accepted (between 8 - 128 chracters) message to user
