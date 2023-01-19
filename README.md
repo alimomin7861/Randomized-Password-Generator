@@ -1,7 +1,7 @@
 # Randomized Password Generator
 
 ## Link to deployed application
-
+https://alimomin7861.github.io/Randomized-Password-Generator/
 
 ## Visual Representation:
 ![](./assets/IMG_3925.png)
